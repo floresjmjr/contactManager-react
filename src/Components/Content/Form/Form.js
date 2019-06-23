@@ -40,7 +40,7 @@ class Form extends Component {
 
   validateInputs = (contactData) => {
     let invalidInputs = {isEmpty: true}
-    
+    contactData.phone = contactData.phone.replace(/\D/g,'');
     //fullName validation
     if(contactData.fullName.length === 0) {
       invalidInputs.fullName = '** A name is required.'
@@ -52,7 +52,7 @@ class Form extends Component {
     //Phone and Email validation
     if(contactData.phone || contactData.email) {
       if (contactData.email.match(/\S+@\S+\.\S+/)) {
-      } else if (contactData.phone.match(/^(\d{10}|\d{12})$/)) {
+      } else if (contactData.phone.match(/^(\d{10})$/)) {
       } else {
         invalidInputs.phone = ('** The contact must have a valid phone number or email.')
         invalidInputs.email = ('** The contact must have a valid phone number or email.')
@@ -91,7 +91,7 @@ class Form extends Component {
   }
 
   formatPhone = (phone) => {
-    return `(${phone.slice(0,3)}) ${phone.slice(3)}`
+    return `(${phone.slice(0,3)}) ${phone.slice(3,6)}-${phone.slice(6)}` 
   }
 
   displayMessage = () => {

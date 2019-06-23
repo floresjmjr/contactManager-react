@@ -27,12 +27,14 @@ class ContactList extends Component {
           contactList.push({ id: key, ...response.data[key]})
         }
       }
+
       contactList = contactList.sort((contact1, contact2)=>{
         if (contact1.fullName < contact2.fullName){ return -1 }
         if (contact1.fullName > contact2.fullName){ return 1 }
         return 0;
       })
       this.setState({contacts: contactList, doneLoading: true})
+
     })
   }
 
