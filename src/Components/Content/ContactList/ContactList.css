@@ -1,9 +1,9 @@
 .Contact {
   display: inline-block;
-  width: 200px;
+  width: 250px;
   padding-bottom: 20px;
   border-bottom: 1px solid lightgray;
-  margin: 20px;
+  margin: 30px;
   text-align: left;
 }
 
@@ -44,7 +44,7 @@
   border: 1px solid #003865;
   color: #003865;
   text-decoration: none;
-  width: 90px;
+  width: 110px;
   box-sizing: border-box;
   text-align: center;
   background-color: #fff;
