@@ -1,0 +1,86 @@
+.NavContainer {
+    display: inline-flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+  }
+
+.Nav {
+  width: 80%;
+  height: 85px;
+  background-color: #d9d9d6;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin: auto;
+}
+
+.NavButton {
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #e8751e;
+  color: #e8751e;
+  text-decoration: none;
+  width: 180px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+}
+
+.NavButton:hover {
+  background-color: #e8751e;
+  color: #003865;
+  font-weight: bold;
+}
+
+.SearchInput {
+
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+  border: 1px solid #e8751e;
+  box-sizing: border-box;
+}
+
+.SearchInput:focus {
+  outline: none;
+}
+
+@media (max-width: 430px) {
+  .Nav {
+    width: 100%;
+    border: none;
+    height: auto;
+    position: fixed;
+    top: 0;
+  }
+
+  .SearchInput {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #e8751e;
+    border-bottom: 1px solid #e8751e;
+  }
+
+  .NavContainer {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .NavButton {
+    display:block;
+    margin-top: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+}
+

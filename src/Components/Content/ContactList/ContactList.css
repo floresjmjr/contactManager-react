@@ -1,0 +1,77 @@
+.Contact {
+  display: inline-block;
+  width: 200px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  margin: 20px;
+}
+
+
+.ContactList {
+  margin: auto;
+  width: 85%;
+}
+
+.Contact dt {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Contact dd {
+  padding: 5px 10px;
+  height: 25px;
+  box-sizing: border-box;
+}
+
+.Contact h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ContactButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ContactButton {
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #003865;
+  color: #003865;
+  text-decoration: none;
+  width: 90px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+
+.ContactButton:hover {
+
+  background-color: #003865;
+  color: #e8751e;
+  font-weight: bold;
+
+}
+
+@media (max-width: 430px) {
+
+  .ContactList {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .Contact {
+    width: 250px;
+    margin: 20px auto;
+    text-align:left;
+  }
+
+  .Contact dt {
+    font-size: 14px;
+  }
+
+}

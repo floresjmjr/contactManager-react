@@ -1,0 +1,80 @@
+.Form {
+  margin: 50px;
+}
+
+.FormTitle {
+  display: block;
+  width: 80%;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 500;
+  margin: 30px auto;
+  color: #003865;
+}
+
+.FormInputs {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.FormButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 20px auto;
+
+}
+
+.FormButton {
+
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #e8751e;
+  color: #e8751e;
+  text-decoration: none;
+  width: 180px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+
+.FormButton:hover {
+  background-color: #e8751e;
+  color: #003865;
+  font-weight: bold;
+}
+
+
+@media (max-width: 430px) {
+  .Form {
+    margin: auto;
+  }
+
+  .FormInputs {
+    width: 90%;
+  }
+
+  .FormButtons {
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px 0;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .FormButton {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .FormTitle {
+    margin: 40px auto 30px auto;
+    border-top: 1px solid #003865;
+    border-bottom: 1px solid #003865;
+  }
+
+}

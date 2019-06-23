@@ -1,0 +1,19 @@
+.NoContacts {
+
+  width: 75%;
+  height: 100px;
+  background-color: #d9d9d6;
+  border: 1px solid gray;
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.NoContacts h4 {
+
+  display: block;
+  height: 40px;
+  padding-top: 10px;
+
+}
